@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bricktower</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top__content container">
+                <div class="text">
+                    <p class="text__description">We are specialists in construction and architecture!</p>
+                </div>
+                <div class="contacts">
+                    <a class="contact" href="tel:(+1) 115 221 2564">
+                        <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+                        <span class="contact__text">(+1) 115 221 2564</span>
+                    </a>
+                    <a class="contact" href="info@example.com">
+                        <i class="fa fa-envelope contact__icon contact__icon--email" aria-hidden="true"></i>
+                        <span class="contact__text">info@example.com</span>
+                    </a>
+                    <a class="contact" href="#">
+                        <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+                        <span class="contact__text">Building Cror,New York,NY 93459</span>
+                    </a>
+                </div><!--.contacts-->
+            </div><!--.container-->
+        </div><!--.header__top-->
+        <div class="header__bottom container">
+            <a href="#" class="logo">
+                <img class="logo__picture" src="images/logo__header.png" alt="logo">
+                <div class="logo__sign">
+                    <h3 class="logo__world">Bricktower</h3>
+                    <p class="logo__description">High Quality Construction</p>
+                </div>
+            </a>
+            <nav class="nav">
+                <a class="nav__link" href="#" data-link="header">Home</a>
+                <a class="nav__link" href="#" data-link="services">Services</a>
+                <a class="nav__link" href="#" data-link="projects">Projects</a>
+                <a class="nav__link" href="#" data-link="about">About</a>
+                <a class="nav__link" href="#" data-link="shop">Shop</a>
+                <a class="nav__link" href="#" data-link="contacts">Contact us</a>
+                <a class="nav__link" href="#" data-link="blog">Blog</a>   
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()";></div>
+    
+        </div>
+    </header>
+
+    <section class="hero hero__sections hero__sections--construction">
+        <div class="hero__title">Construction</div>
+        <div class="direction">
+            <a href="#" class="direction__link">Home</a>
+            <span>/</span>
+            <a href="#" class="direction--active">Construction</a>
+        </div>         
+    </section>
+
+    <section class="main-section container">
+        <aside class="sidebar">
+            <nav class="sidebar__menu">
+                <ul class="sidebar__menu__list">
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">All services</a>
+                    </li>
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">Construction</a>
+                    </li>
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">Architecture</a>
+                    </li>
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">Building maintenance</a>
+                    </li>
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">Wall paint</a>
+                    </li>
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">Hardwood flooring</a>
+                    </li>
+                    <li class="sidebar__menu__item">
+                        <a href="#" class="sidebar__menu__link">Refurbishment</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__news-section">
+                <div class="title sidebar__title">
+                    <h2 class="title__header sidebar__title__header">Latest news</h2>  
+                </div>
+                <div class="sidebar__news-block">
+                    <a href="#" class="sidebar__news">
+                        <div class="sidebar__tile">
+                            <img src="../app/images/sidebar__news1.jpg" class="sidebar__image" alt="image">
+                            <div class="sidebar__point">
+                                <h5 class="sidebar__point__header">
+                                    Lorem Ipsum Sit Arem Adipiscing Eli
+                                </h5>
+                                <div class="sidebar__point__date">
+                                    <i class="fa fa-calendar calendar" aria-hidden="true"></i>
+                                    16 jan, 2018
+                                </div>
+                            </div><!--sidebar__point-->
+                        </div><!--sidebar__tile-->
+                    </a>
+                    <a href="#" class="sidebar__news"> 
+                        <div class="sidebar__tile">
+                            <img src="../app/images/sidebar__news2.jpg" class="sidebar__image" alt="image">
+                            <div class="sidebar__point">
+                                <h5 class="sidebar__point__header"> 
+                                    Sed Sodales Interdum Nulla The Venenatis.
+                                </h5>
+                                <div class="sidebar__point__date">
+                                    <i class="fa fa-calendar  calendar" aria-hidden="true"></i>
+                                    16 jan, 2018
+                                </div>
+                            </div><!--sidebar__point-->
+                        </div><!--sidebar__tile-->
+                    </a>
+                    <a href="#" class="sidebar__news">
+                        <div class="sidebar__tile">
+                            <img src="../app/images/sidebar__news3.jpg" class="sidebar__image" alt="image">
+                            <div class="sidebar__point">
+                                <h5 class="sidebar__point__header">
+                                    Quis massa vehicula accumsan quam.
+                                </h5>
+                                <div class="sidebar__point__date">
+                                    <i class="fa fa-calendar  calendar" aria-hidden="true"></i>
+                                    16 jan, 2018
+                                </div>
+                            </div><!--sidebar__point-->
+                        </div><!--sidebar__tile-->
+                    </a><!--sidebar__news-->
+                </div><!--sidebar__news-block-->
+            </div><!--sidebar__news-section-->
+        </aside>
+        <section class="content">
+            <div class="content__slider">
+                    <div class="fotorama"
+                    data-nav="thumbs" max-width="100%" ><!--data-max-width="870" data-height="400"-->
+                       <a href="../app/images/slider-thumbnails1.jpg"><img src="1_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails2.jpg"><img src="2_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails3.jpg"><img src="3_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails1.jpg"><img src="4_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails2.jpg"><img src="5_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails3.jpg"><img src="6_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails1.jpg"><img src="7_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails2.jpg"><img src="8_thumb.jpg" width="150" height="100"></a>
+                       <a href="../app/images/slider-thumbnails3.jpg"><img src="8_thumb.jpg" width="150" height="100"></a>
+                   </div>
+            </div>
+            <article class="content__first-content">
+                <div class="title title--with-line-left ">
+                    <h2 class="title__header content__title__header">Development Works</h2>  
+                </div>
+                <p class="main-content__first-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum, libero sed 
+                    mollis venenatis, ligula enim imperdiet est, eu luctus nisi felis et odio. Praesent felis 
+                    nibh, pretium non leo sit amet, vestibulum pretium mauris. Nunc cursus orci nec odio 
+                    interdum sollicitudin. Ut tincidunt erat velit, eget gravida purus facilisis eu. Nullam eget 
+                    sto sit amet turpis pharetra sodales. Integer id placerat erat.
+                </p>
+                <p class="main-content__first-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum, libero sed 
+                    mollis venenatis, ligula enim imperdiet est, eu luctus nisi felis et odio. Praesent felis 
+                    nibh, pretium non leo sit amet, vestibulum pretium mauris. Nunc cursus orci nec odio 
+                    interdum sollicitudin. Ut tincidunt erat velit.
+                </p>
+            </article><!--content__first-content-->
+            <div class="content__second-content">
+                <article class="content__sheet">
+                    <div class="title title--with-line-left">
+                        <h2 class="title__header content__title__header">Construction Service</h2>  
+                    </div>
+                    <p class="content__sheet__text">
+                        Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscit. Vestibulum bibendum massa 
+                        velit, in interdum ex feugiat a. Cutur cursus nec tortor ac euismod. Nam massa ex, condimentum.
+                    </p>
+                    <ul class="content__list">
+                        <li class="content__item">
+                            <i class="fa fa-long-arrow-right content__arrow-right" aria-hidden="true"></i>
+                            Optimize materials, construction method and cost.
+                        </li>
+                        <li class="content__item">
+                            <i class="fa fa-long-arrow-right content__arrow-right" aria-hidden="true"></i>
+                            Limit subsequent structural movement.
+                        </li>
+                        <li class="content__item">
+                            <i class="fa fa-long-arrow-right content__arrow-right" aria-hidden="true"></i>
+                            Limit the danger to the house.
+                        </li>
+                        <li class="content__item">
+                            <i class="fa fa-long-arrow-right content__arrow-right" aria-hidden="true"></i>
+                            Replace buttresses for improved working space.
+                        </li>
+                        <li class="content__item">
+                            <i class="fa fa-long-arrow-right content__arrow-right" aria-hidden="true"></i>
+                            Duis dapibus libero ac erat lacinia quis
+                        </li>
+                    </ul>
+                </article><!--content__sheet-->
+                <div class="content__video">
+                    <div class="title title--with-line-left">
+                        <h2 class="title__header content__title__header">Our Brochure</h2>  
+                    </div>
+                    <div class="video">
+                        <iframe width="416" height="208" src="https://www.youtube.com/embed/nQWFzMvCfLE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                        <div class="content__buttons">
+                            <a href="#" class="content__button">
+                                <p>Download pdf</p>  
+                                <i class="fa fa-download content__download" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="content__button">
+                                <p>Download doc</p>  
+                                <i class="fa fa-download content__download" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+    </section><!--container-->
+   
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__block">
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/themeforest.png" alt="partners">
+                </a>
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/activeden.png" alt="partners">
+                </a>
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/audiojungle.png" alt="partners">
+                </a>
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/codecanyon.png" alt="partners">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+        <div class="container">
+            <div class="footer-top__block footer-top__block__logo">
+                <a href="#" class="logo logo__footer">
+                    <img class="logo__picture" src="images/logo__footer.png" alt="logo">
+                    <div class="logo__sign">
+                        <h3 class="logo__world">Bricktower</h3>
+                        <p class="logo__description">High Quality Construction</p>
+                    </div>
+                </a>
+                <p class="footer-top__logo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eum asperiores eos hic quia voluptatem 
+                saepe, dicta quod eveniet exercitationem
+                </p>
+                <div class="footer-top__logo__social">
+                    <i class="fa fa-facebook social" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus social" aria-hidden="true"></i>
+                    <i class="fa fa-twitter social" aria-hidden="true"></i>
+                    <i class="fa fa-behance social" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin social" aria-hidden="true"></i>
+                    <i class="fa fa-drupal social" aria-hidden="true"></i>
+                </div>
+            </div><!--footer-top__block__logo-->
+
+            
+
+            <div class="footer-top__block footer-top__block__links">
+                    <h3 class="footer-top__header">Useful links</h3>
+                    <div class="footer-top__tile links">
+                    <ul class="footer-top__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Home</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">About us</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Services</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Projects</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-top__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Contact us</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Blog</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">FAQ</a>
+                        </li>
+                    </ul>
+                </div><!--footer-top__tile-->
+            </div><!--footer-top__links-->
+
+            <div class="footer-top__block footer-top__block__contact">
+                <h3 class="footer-top__header">Contact us</h3>
+                <ul class="footer-top__tile contact">
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+                            Call Us +1 (855) 203-5485
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-fax contact__icon" aria-hidden="true"></i>
+                            +1 (855) 203-5485
+                        </a>
+                    </li>   
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-envelope contact__icon" aria-hidden="true"></i>
+                            info@example.com
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+                            Building Cror, New York, NY 93459
+                        </a>
+                    </li>
+                </ul><!--footer-top__tile-->
+            </div><!--footer-top__contact-->
+
+                
+            <div class="footer-top__block footer-top__block__info">
+                <h3 class="footer-top__header footer-top__header__info">Working hours</h3>
+                <div class="info">
+                    <p class="footer-top__info__text">Our support available to help you 24 hours a day, seven days a week.</p>
+                    <div class="footer-top__info__time">
+                        <p class="info__day">Monday-Friday</p><p>9am to 5pm</p>
+                    </div>
+                    <div class="footer-top__info__time">
+                        <p class="info__day">Saturday</p>
+                        <p>10am to 2pm</p>
+                    </div>
+                    <div class="footer-top__info__time">
+                        <p class="info__day">Sunday</p>
+                        <p>Closed</p>
+                    </div>
+                </div>
+            </div><!--footer-top__info-->
+        </div><!--container-->
+        </div><!--footer_top-->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copy">Copyright &copy; 2018 Construction Theme Demo-Theme by <span class="copy--decorated">AuThemes</span></p>
+                <ul class="footer-bottom__nav">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Our Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contact us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+        
+    <!-- build:css css/vendor.min.css -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endbuild -->
+    
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor.min.js -->
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/fitvids/jquery.fitvids.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/fitVids.js"></script>
+    <!-- endbuild -->
+    
+
+        
+    </body>
+
+    
+    </html>

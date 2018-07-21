@@ -1,0 +1,142 @@
+.content {
+    //flex-basis: 74.358%; // 870px;
+    width: 72.3%;
+    margin: 60px 0 0 0;
+   // flex-shrink: 2;
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+    }
+
+    &__slider {
+        margin-bottom: 45px;
+    }
+
+    &__first-content {
+        margin-bottom: 45px;
+    }
+
+    & .title--with-line-left {
+
+        
+        @media only screen and (max-width: 940px) {
+            text-align: center;
+
+            &::after {
+                content: '';
+                bottom: -16px;
+                left: 50%;
+                margin-left: -35px;
+                width: 70px;
+                height: 3px;
+                background: $decoration-color;
+                position: absolute;
+
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+           margin-bottom: 25px;
+        }
+
+        & .title__header {
+            font-size: 20px;
+        }
+        
+    }
+
+    &__second-content {
+        display: flex;
+        margin-bottom: 50px;
+
+        @media only screen and (max-width: 1150px) {
+            flex-direction: column;
+
+         }
+
+    }
+
+    &__sheet {
+        width: 50%;
+
+        @media only screen and (max-width: 1150px) {
+            margin-bottom: 50px;
+            width: 100%;
+         }
+
+        &:first-child {
+            padding-right: 40px;
+        }
+    }
+
+    &__sheet__text {
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        padding-left: 0;
+    }
+    &__item {
+        padding: 10px 0;
+        border-bottom: 1px solid #f2f2f2; 
+
+        &:hover {
+            border-bottom: 1px solid #adadad; 
+        }
+    }
+    &__arrow-right {
+        color: $decoration-color;
+        padding-right: 10px;
+    }
+
+    &__video {
+        width: 50%;
+
+        @media only screen and (max-width: 1150px) {
+            width: 100%;
+         }
+    }
+
+    & .video {
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 1150px) {
+            justify-content: space-around;
+            margin-bottom: 40px;
+         }
+    }
+    &__button {
+        color: #333;
+        font-size: 15px;
+        text-transform: uppercase;
+        background-color: #f2f2f2;
+        padding: 10px 30px;
+        display: flex;
+
+        @media only screen and (max-width: 470px) {
+            padding: 10px;
+            font-size: 13px;
+         }
+         @media only screen and (max-width: 370px) {
+            padding: 10px 5px;
+            font-size: 13px;
+         }
+
+        &:hover {
+            color: $decoration-color;
+        }
+
+        
+    }
+
+    &__download {
+        padding-left: 10px;
+        line-height: 1.6;
+    }
+}

@@ -1,0 +1,72 @@
+.quote {
+    background-color: #f7f7f7;
+    padding: 55px 0 50px 0;
+    
+    @media only screen and (max-width: 1205px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
+
+        @media only screen and (max-width: 690px) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__lightbulb {
+        width: 45px;
+        height: 45px;
+        margin-right: 17px;
+
+        @media only screen and (max-width: 505px) {
+            display: none;
+        } 
+        
+    }
+/*
+    &__icon {
+        margin-right: 30px;
+        color: $decoration-color;
+        font-size: 50px;
+    }
+*/
+    &__tile {
+        display: flex;
+
+        @media only screen and (max-width: 690px) {
+            margin-bottom: 18px;
+            padding: 0 20px;
+            text-align: center;
+        } 
+
+        .quote__title {
+            font-family: $font-family-title;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .quote__link {
+            color: $titles-color;
+            transition: .3s;
+
+            &:hover {
+                color: $decoration-color;
+            }
+        }
+
+        .quote__text {
+            color: #666;
+            font-size: 14px;
+        }
+    }
+    
+}

@@ -1,0 +1,58 @@
+
+.accordion{
+
+    margin: 55px 70px 0 0;
+
+    @media only screen and (max-width: 1000px) {
+      margin: 50px 0;
+  }
+
+  &__button {
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::after {
+        content: '\f055';
+        font-family: "fontawesome";
+        font-size: 14px;
+        float: right;
+      }
+
+      &.is-open {
+        outline: none;
+        border-bottom: 1px solid #ccc;
+        
+        &::after {
+        content: '\f056';
+      }
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    padding: 0 10px;
+    transition: max-height 0.2s ease-in-out;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+

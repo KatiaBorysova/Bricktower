@@ -1,0 +1,42 @@
+@mixin centerer() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerer-x() {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+@mixin centerer-y() {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+}
+////////////
+
+@mixin clear {
+    margin: 0;
+    padding: 0;
+}
+@mixin clear-list {
+    @include clear;
+    list-style: none;
+}
+@mixin flex-center ($direction: column){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;    
+}
+@mixin package-color($color: $yellow) {
+    & .item_value {
+        color: $color;
+    }
+    & .tile_cost {
+        border-color: $color !important;
+    }
+
+}

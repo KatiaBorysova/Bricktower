@@ -1,0 +1,226 @@
+.contact-us {
+
+    &.container {
+        margin: 80px auto;
+        padding-bottom: 60px;
+
+        @media only screen and (max-width: 1250px){
+            margin: 70px auto;
+            padding: 0 35px;
+        }
+        @media only screen and (max-width: 620px){
+            margin: 40px auto;
+            padding: 0 25px;
+        }
+    }
+
+    &__border {
+        border: 1px solid #e6e6e6;
+         position: relative;
+   
+    &::after {
+        content: " ";
+        width: 225px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        margin-left: -112.5px;
+    }
+
+    
+    }
+
+    
+    
+    & .title {
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        z-index: 10;
+        top: -23px;
+        margin-bottom: 50px;
+
+        @media only screen and (max-width: 1000px){
+            margin-bottom: 25px;
+        }
+        @media only screen and (max-width: 600px){
+            margin-bottom: 0;
+        }
+    }
+    
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__tile {
+        width: 50%;
+        padding: 0  0 40px 100px;
+
+        @media only screen and (max-width: 1250px){
+            padding: 0  0 30px 60px;
+        }
+        @media only screen and (max-width: 1000px){
+            padding: 20px;
+        }
+        @media only screen and (max-width: 830px){
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    & .form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+
+        @media only screen and (max-width: 1000px){
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 830px){
+            margin: 0 auto;
+            width: 85%;
+        }
+        @media only screen and (max-width: 530px){
+            width: 100%;
+        }
+
+
+
+        &__input {
+            
+            margin-bottom: 20px ;
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+            transition: .5s;
+
+            
+
+            &:hover {
+                border: 1px solid $decoration-color;
+            }
+            &:focus {
+                outline: none;
+                border: 1px solid $decoration-color;
+            }
+
+            
+        }
+
+        
+
+
+        &__label {
+            color: #696969;
+            
+        }
+
+        & .button__public {
+            width: 127px;
+            margin-top: 20px;
+
+            @media only screen and (max-width: 830px){
+                margin: 0 auto 20px;
+            }
+        }
+    }
+
+    &__contacts {
+        padding-top: 15px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (max-width: 830px){
+            margin: 0 auto;
+            width: 73%;
+        }
+        @media only screen and (max-width: 500px){
+            width: 90%;
+        }
+        @media only screen and (max-width: 400px){
+            width: 96%;
+        }
+    }
+
+    &__link {
+        margin-bottom: 65px;
+
+        @media only screen and (max-width: 530px){
+
+            &:last-child {
+            margin-bottom: 30px;
+            }
+            
+        }      
+ 
+       
+    }
+
+    &__header {
+        display: flex;
+        color: #333;
+        
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        transition: .3s;
+
+        
+
+        &:hover {
+            color: $decoration-color;
+        }
+    }
+
+    &__icon {
+        font-size: 25px; 
+        padding-right: 39px;
+
+        @media only screen and (max-width: 400px){
+            padding-right: 18px;
+        }
+    }
+
+    &__head {
+        font-size: 18px;
+        line-height: 0.9;
+        font-weight: bold;
+
+        @media only screen and (max-width: 500px){
+            font-size: 16px;
+        }
+        @media only screen and (max-width: 360px){
+            font-size: 15px;
+        }
+    }
+    
+    &__inner {
+        color: #696969;
+        padding-left: 60px;
+
+        @media only screen and (max-width: 400px){
+            padding-left: 32px;
+        }
+    }
+
+   &__social {
+       width: 40px;
+       height: 40px;
+       background-color: #f2f2f2;
+       font-size: 20px;
+       text-align: center;
+       padding-top: 10px;
+       margin: 7px;
+       transition: 0.4s;
+
+       &:hover {
+           color: $decoration-color;
+       }
+   }
+
+}

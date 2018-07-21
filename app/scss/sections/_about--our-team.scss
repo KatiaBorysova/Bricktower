@@ -1,0 +1,26 @@
+.about__our-team {
+
+    &.container {
+        @media only screen and (max-width: 1200px) {
+            padding: 40px 20px 35px 20px;
+        }
+    }
+
+    & .about__list__item {
+      width: 24%;
+
+       @media only screen and (max-width: 860px) {
+            width: 47%;
+        }
+        @media only screen and (max-width: 450px) {
+           width: 90%;
+        }
+    }
+
+    & .about__list__image {
+       width: 100%;
+    }
+    
+
+}
+

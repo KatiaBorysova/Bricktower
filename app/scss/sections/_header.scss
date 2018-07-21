@@ -1,0 +1,182 @@
+
+.header {
+    & .container {
+        padding-left: 0;
+
+        @media only screen and (max-width: 1200px) {
+           padding: 0 20px;
+        }
+     
+    }
+
+    .text {
+        @media only screen and (max-width: 920px) {
+            display: none;
+        }
+    }
+   
+    &__top {
+       // background-color: #de2b24;
+        background-color: $titles-color;
+        color: #fff;
+        padding: 17px 0;
+
+        &__content {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-right: 0;
+
+           @media only screen and (max-width: 920px) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+            .contacts {
+
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            
+                .contact {
+                   padding-left: 8px;
+                    color: #fff;
+                    transition: 0.5s;
+                    
+            
+                    &:hover {
+                        color: $decoration-color;
+                    }
+
+                    &__icon {
+                        margin-right: 7px;
+                        color: $decoration-color;
+                        font-size: 20px;
+            
+                        &--email {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            
+        }  
+    } //top
+
+    &__bottom {
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media only screen and (max-width: 1200px) {
+           padding: 10px 20px;
+        }
+        
+
+        .logo {
+            @media only screen and (max-width: 1200px) {
+               margin: 12px 0;
+            }
+            @media only screen and (max-width: 900px) { //hamburger menu
+                margin: 10px auto;
+            }
+        }
+
+        .nav {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 7px;
+
+            @media only screen and (max-width: 1200px) {
+                margin: 12px 0; 
+              }
+
+            @media only screen and (max-width: 900px) {   //hamburger menu
+                left: -185px; // instead of  display: none;
+                background-color: rgba(51, 51, 51,  0.9);
+                position: fixed;
+                z-index: 10;
+                top: 0;
+                bottom: 0;
+                //left: 0;
+                width: 185px;
+                margin: 0;
+                padding-top: 10%;
+                transition: .2s;
+
+                 &.open {
+                    left: 0; // instead of  display: block;
+                }
+            }
+
+              
+           
+            &__link {
+                
+                display: inline-block;
+                vertical-align: top;
+                padding: 10px 0 10px 25px;
+                font-family: $font-family-title;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $titles-color;
+                transition: 0.5s;
+
+    
+                &:hover,
+                &--active {
+                    text-decoration: none;
+                    color: $decoration-color;
+                }
+
+                @media only screen and (max-width: 980px) {
+                    padding: 10px 0 10px 15px;
+                }
+
+                @media only screen and (max-width: 900px) { //hamburger menu
+                   display: block;
+                   color: #fff;
+                }
+
+        
+
+            } // link
+
+
+        } // nav 
+
+        .hamburger {
+            display: none;
+            height: 20px;
+            width: 22px;
+            margin: 6px;
+            position: relative;
+            border-top: 2.3px solid $titles-color;
+            border-bottom: 2.3px solid $titles-color;
+            cursor: pointer;
+            
+
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 7px;
+                height: 2.3px;
+                background-color: $titles-color;
+                display: block; 
+            }
+
+            @media only screen and (max-width: 900px) { //hamburger menu
+                display: block;
+            }
+        } // hamburger
+        
+
+
+    } // bottom
+
+    
+} // header

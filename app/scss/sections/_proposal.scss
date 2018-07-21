@@ -1,0 +1,68 @@
+.proposal {
+    background: #454545 url(../images/proposal.jpg) center/cover no-repeat;
+    text-align: center;
+    height: 350px;
+
+    @media only screen and (max-width: 680px) {
+        height: 270px;
+    }
+
+    @media only screen and (max-width: 410px) {
+        height: 240px;
+    }
+
+    &__hovering__item {
+        padding-top: 8%;
+        background-color:rgba(0, 0, 0, .6);
+
+        @media only screen and (max-width: 1080px) {
+           padding-top: 12%;
+        }
+        @media only screen and (max-width: 880px) {
+            padding-top: 14%;
+        }
+        @media only screen and (max-width: 510px) {
+        padding-top: 16%;
+        }
+       
+        & .proposal__title {
+            margin-bottom: 30px;
+        }
+    
+        & .proposal__title__header {
+            font-size: 33px;
+            font-weight: bold;
+            color: #fff;
+            
+    
+            @media only screen and (max-width: 680px) {
+                font-size: 28px;
+            }
+            @media only screen and (max-width: 590px) {
+                font-size: 24px;
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 20px;
+            }
+            @media only screen and (max-width: 410px) {
+                font-size: 16px;
+            }
+        }
+       & .proposal__button__public {
+           font-size: 16px;
+           
+            @media only screen and (max-width: 680px) {
+                color: #fff;
+                padding: 9px 23px;
+                 
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 13px;
+                 
+            }
+        }
+    
+
+
+    }
+}

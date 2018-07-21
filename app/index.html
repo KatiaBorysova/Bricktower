@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bricktower</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top__content container">
+                <div class="text">
+                    <p class="text__description">We are specialists in construction and architecture!</p>
+                </div>
+                <div class="contacts">
+                    <a class="contact" href="tel:(+1) 115 221 2564">
+                        <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+                        <span class="contact__text">(+1) 115 221 2564</span>
+                    </a>
+                    <a class="contact" href="info@example.com">
+                        <i class="fa fa-envelope contact__icon contact__icon--email" aria-hidden="true"></i>
+                        <span class="contact__text">info@example.com</span>
+                    </a>
+                    <a class="contact" href="#">
+                        <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+                        <span class="contact__text">Building Cror,New York,NY 93459</span>
+                    </a>
+                </div><!--.contacts-->
+            </div><!--.container-->
+        </div><!--.header__top-->
+        <div class="header__bottom container">
+            <a href="#" class="logo">
+                <img class="logo__picture" src="images/logo__header.png" alt="logo">
+                <div class="logo__sign">
+                    <h3 class="logo__world">Bricktower</h3>
+                    <p class="logo__description">High Quality Construction</p>
+                </div>
+            </a>
+            <nav class="nav">
+                <a class="nav__link" href="#" data-link="header">Home</a>
+                <a class="nav__link" href="#" data-link="services">Services</a>
+                <a class="nav__link" href="#" data-link="projects">Projects</a>
+                <a class="nav__link" href="#" data-link="about">About</a>
+                <a class="nav__link" href="#" data-link="shop">Shop</a>
+                <a class="nav__link" href="#" data-link="contacts">Contact us</a>
+                <a class="nav__link" href="#" data-link="blog">Blog</a>   
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()";></div>
+    
+        </div>
+    </header>
+    <section class="hero hero-main">
+            <!--<i class="fa fa-home hero__icon" aria-hidden="true"></i>-->
+            <div class="hero__title">Building a disaster resistant home!</div>
+            <p class="hero__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem maxime aperiam neque corporis deserunt illo sequi nesciunt explicabo. 
+                                    Cupiditate quae numquam dolorum. Reprehenderit reiciendis, deleniti quaerat ipsam blanditiis ea libero!
+            </p>
+            <a href="#" class="button__public hero__button__public">Contact us</a>
+            <a href="#" class="button__public hero__button__public">Learn more</a>
+    </section>
+    <section class="quote">
+        <div class="container">
+            <div class="quote__tile">
+                <!--<i class="fa fa-lightbulb-o quote__icon" aria-hidden="true"></i> -->
+               <img class="quote__lightbulb" src="../app/images/bulb1.png" alt="lightbulb">
+                <div class="quote__block-text">    
+                    <h1 class="quote__title"><a href="#" class="quote__link">You want to build the prodject?</a></h1>
+                    <div class="quote__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero vitae</div>
+                </div> 
+            </div>
+            <a href="#" class="button__public button__public--lightener">Get a quote</a>
+        </div>  
+    </section>
+    <section class="services container">
+        <ul class="services__list">
+                <li class="list list__item">
+                    <div class="hovering__block">
+                            <span class="hovering__item">
+                                <a href="#" class="hovering__link services__hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                            </span>
+                        <img class="list__image" src="../app/images/services1.jpg" alt="image">
+                    </div>
+                    <h3 class="list__header"><a href="#" class="list__link">Architecture</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </li>
+                <li class="list list__item">
+                        <div class="hovering__block">
+                            <span class="hovering__item">
+                                <a href="#" class="hovering__link services__hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                            </span>
+                            <img class="list__image" src="../app/images/services2.jpg" alt="image">
+                        </div>
+                    <h3 class="list__header"><a href="#" class="list__link">Construction</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </li>
+                <li class="list list__item">
+                        <div class="hovering__block">
+                            <span class="hovering__item">
+                                <a href="#" class="hovering__link services__hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                            </span>
+                            <img class="list__image" src="../app/images/services3.jpg" alt="image">
+                        </div>
+                    <h3 class="list__header"><a href="#" class="list__link">Water pipe</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </li>
+                <li class="list list__item">
+                        <div class="hovering__block">
+                                <span class="hovering__item">
+                                    <a href="#" class="hovering__link services__hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                                </span>
+                            <img class="list__image" src="../app/images/services4.jpg" alt="image">
+                        </div>
+                    <h3 class="list__header"><a href="#" class="list__link">Wall paint</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </li>
+            </ul>
+            <a href="#" class="button__public button__public--lightener">All services</a>
+    </section>
+    <section class="success">
+        <div class="success__center">
+        <div class="title title--with-bottom-line">
+            <a href="#" class="title__link">
+                <h2 class="title__header">Our success</h2>
+            </a>
+        </div>
+        <ul class="success__list">
+            <li class="success__item">
+                <div class="hovering__block">
+                    <span class="hovering__item success__hovering__item">
+                        <a href="#" class="hovering__link header">The sharp building</a>
+                        <a href="#" class="hovering__link text">Building, Education</a>
+                        <a href="#" class="hovering__link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </span>
+                    <img class="success__picture" src="../app/images/success1.jpg" alt="picture">
+                </div>
+            </li>
+            <li class="success__item">
+                <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link header">The sharp building</a>
+                            <a href="#" class="hovering__link text">Building, Education</a>
+                            <a href="#" class="hovering__link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                    <img class="success__picture" src="../app/images/success2.jpg" alt="picture">
+                </div>
+            </li>
+            <li class="success__item">
+                <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link header">The sharp building</a>
+                            <a href="#" class="hovering__link text">Building, Education</a>
+                            <a href="#" class="hovering__link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                    <img class="success__picture" src="../app/images/success3.jpg" alt="picture">
+                </div>
+            </li>
+            <li class="success__item">
+                <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link header">The sharp building</a>
+                            <a href="#" class="hovering__link text">Building, Education</a>
+                            <a href="#" class="hovering__link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                    <img class="success__picture" src="../app/images/success4.jpg" alt="picture">
+                </div>
+            </li>
+            <li class="success__item">
+                <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link header">The sharp building</a>
+                            <a href="#" class="hovering__link text">Building, Education</a>
+                            <a href="#" class="hovering__link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                    <img class="success__picture" src="../app/images/success5.jpg" alt="picture">
+                </div>
+            </li>
+            <li class="success__item">
+                <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link header">The sharp building</a>
+                            <a href="#" class="hovering__link text">Building, Education</a>
+                            <a href="#" class="hovering__link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </span>
+                    <img class="success__picture" src="../app/images/success6.jpg" alt="picture">
+                </div>
+            </li> 
+        </ul>
+        <a href="#" class="button__public button__public--lightener">All projects</a>
+        </div><!--success__center-->
+    </section>
+    <section class="process container">
+        <div class="title title--with-bottom-line">
+            <a href="#" class="title__link">
+                <h2 class="title__header">Our process</h2>
+            </a>
+        </div>
+        <ul class="process__list">
+            <li class="list list__item">
+                <div class="process__icon">
+                    <img class="process__icon-img" src="../app/images/planning.png" alt="icon">
+                </div>
+                <div class="list__block">
+                    <h1 class="list__number">01</h1>
+                    <h3 class="list__header"><a href="#" class="list__header__link">Planning</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+            </li>
+            <li class="list list__item">
+                <div class="process__icon">
+                    <img class="process__icon-img" src="../app/images/architecture.png" alt="icon">
+                </div>
+                <div class="list__block">
+                    <h1 class="list__number">02</h1>
+                    <h3 class="list__header"><a href="#" class="list__header__link">Architecture</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+            </li>
+            <li class="list list__item">
+                <div class="process__icon">
+                    <img class="process__icon-img" src="../app/images/construction.png" alt="icon">
+                </div>
+                <div class="list__block">
+                    <h1 class="list__number">03</h1>
+                    <h3 class="list__header"><a href="#" class="list__header__link">Construction</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+            </li>
+            <li class="list list__item">
+                <div class="process__icon">
+                    <img class="process__icon-img" src="../app/images/testing.png" alt="icon">
+                </div>
+                <div class="list__block">
+                    <h1 class="list__number">04</h1>
+                    <h3 class="list__header"><a href="#" class="list__header__link">Testing</a></h3>
+                    <p class="list__description">Lorem Ipsum is simply dummy text of the printing</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="slider">
+            <div class="slider__slide" data-slide="1">
+                <i class="fa fa-quote-left slider__quote" aria-hidden="true"></i>
+                <p class="slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ullam 
+                    placeat aliquam saepe inventore beatae dolor fuga, sapiente facilis soluta minima quo porro 
+                    consequuntur harum?</p>
+                <p class="slider__sign"><span class="slider__sign--author">1Crystal Peters</span>-Marceting</p>
+                <div class="slider__icons">
+                    <div class="span slider__icon slider__icon--active" data-id="1"></div>
+                    <div class="span slider__icon" data-id="2"></div>
+                    <div class="span slider__icon" data-id="3"></div>
+                </div><!--.slider__icons-->
+            </div><!--.slider__slide-->
+
+            <div class="slider__slide hide" data-slide="2">
+                <i class="fa fa-quote-left slider__quote" aria-hidden="true"></i>
+                <p class="slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ullam 
+                    placeat aliquam saepe inventore beatae dolor fuga, sapiente facilis soluta minima quo porro 
+                    consequuntur harum?</p>
+                <p class="slider__sign"><span class="slider__sign--author">2Crystal Peters</span>-Marceting</p>
+                <div class="slider__icons">
+                    <div class="span slider__icon" data-id="1"></div>
+                    <div class="span slider__icon slider__icon--active " data-id="2"></div>
+                    <div class="span slider__icon" data-id="3"></div>
+                </div><!--.slider__icons-->
+            </div><!--.slider__slide-->
+          
+            <div class="slider__slide hide" data-slide="3">
+                <i class="fa fa-quote-left slider__quote" aria-hidden="true"></i>
+                <p class="slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ullam 
+                    placeat aliquam saepe inventore beatae dolor fuga, sapiente facilis soluta minima quo porro 
+                    consequuntur harum?</p>
+                <p class="slider__sign"><span class="slider__sign--author">3Crystal Peters</span>-Marceting</p>
+                <div class="slider__icons">
+                    <div class="span slider__icon" data-id="1"></div>
+                    <div class="span slider__icon" data-id="2"></div>
+                    <div class="span slider__icon slider__icon--active" data-id="3"></div>
+                </div><!--.slider__icons-->
+            </div><!--.slider__slide-->
+
+
+        </div><!--.slide-->
+        </div>
+    </section>
+    <section class="our-team container">
+        <div class="title title--with-bottom-line">
+            <a href="#" class="title__link">
+                <h2 class="title__header">Meet our team</h2>
+            </a>
+        </div>
+        <ul class="our-team__list">
+                <li class="list list__item">
+                    <div class="hovering__block">
+                        <span class="hovering__item our-team__hovering__item">
+                            <a href="#" class="hovering__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="hovering__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="hovering__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="hovering__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#" class="hovering__link"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </span>
+                        <img src="../app/images/our-team1.jpg" alt="picture">
+                    </div>
+                    <h3 class="list__header">Brandon Sullivan</h3>
+                    <p class="list__description">General Director</p>
+                </li>
+                <li class="list list__item">
+                        <div class="hovering__block">
+                            <span class="hovering__item our-team__hovering__item">
+                                <a href="#" class="hovering__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </span>
+                            <img src="../app/images/our-team2.jpg" alt="picture">
+                        </div>
+                    <h3 class="list__header">Cristina Gilbert</h3>
+                    <p class="list__description">Manager</p> 
+                </li>
+                <li class="list list__item">
+                        <div class="hovering__block">
+                            <span class="hovering__item our-team__hovering__item">
+                                <a href="#" class="hovering__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="#" class="hovering__link"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </span>
+                            <img src="../app/images/our-team3.jpg" alt="picture">
+                        </div>
+                    <h3 class="list__header">Charless Collins</h3>
+                    <p class="list__description">Worker</p>
+                </li>
+            </ul>
+    </section>
+    <section class="proposal hovering__block">
+        <div class="hovering__item proposal__hovering__item">
+            <div class="title proposal__title">
+                <h1 class="title__header proposal__title__header">We are having a project for you!</h1>
+            </div>
+            <a href="#" class="button__public proposal__button__public">Get a quote</a>
+        </div>
+    </section>
+    <section class="news container">
+            <div class="title title--with-bottom-line">
+                <a href="#" class="title__link">
+                    <h2 class="title__header">Company news</h2>
+                </a>
+            </div>
+            <ul class="news__list">
+                <li class="list list__item">
+                    <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                        </span>
+                        <img class="list__image" src="../app/images/news1.jpg" alt="picture">
+                        <div class="date__block">
+                            <p class="date__day date__day-first">26</p>
+                            <p class="date__day">June</p>
+                        </div>
+                    </div>
+                    <h3 class="list__header"> <a href="#" class="list__link">Sed lacinia Tincidunt Enim In Luctus.</a></h3>
+                    <p class="list__description">Quisque nunc nisi, iaculis quis ex nec gravida mauris. 
+                        Curabitur cursus lectus id cursus posuere maximus neque a risus posuere, vel tempor enim iaculis gravida.
+                    </p>
+                    <a href="#" class="button__public button__public--lightener news__button__public">Read more</a>
+                </li>
+                <li class="list list__item">
+                    <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                        </span>
+                        <img class="list__image" src="../app/images/news2.jpg" alt="picture">
+                        <div class="date__block">
+                            <p class="date__day date__day-first">26</p>
+                            <p class="date__day">June</p>
+                        </div>
+                    </div>
+                    <h3 class="list__header"> <a href="#" class="list__link">Nunc Sollicitudin Eros At Turpis Tempor</a></h3>
+                    <p class="list__description">Quisque nunc nisi, iaculis quis ex nec gravida mauris. 
+                        Curabitur cursus lectus id cursus posuere maximus neque a risus posuere, vel tempor enim iaculis gravida.
+                    </p>
+                    <a href="#" class="button__public button__public--lightener news__button__public">Read more</a> 
+                </li>
+                <li class="list list__item">
+                    <div class="hovering__block">
+                        <span class="hovering__item success__hovering__item">
+                            <a href="#" class="hovering__link"><i class="fa fa-check" aria-hidden="true"></i></a>
+                        </span>
+                        <img class="list__image" src="../app/images/news3.jpg" alt="picture">
+                        <div class="date__block">
+                            <p class="date__day date__day-first">26</p>
+                            <p class="date__day">June</p>
+                        </div>
+                    </div>
+                    <h3 class="list__header"> <a href="#" class="list__link">Ellentesque Erat Lacus Tincidunt.</a></h3>
+                    <p class="list__description">Quisque nunc nisi, iaculis quis ex nec gravida mauris. 
+                        Curabitur cursus lectus id cursus posuere maximus neque a risus posuere, vel tempor enim iaculis gravida.
+                    </p>
+                    <a href="#" class="button__public button__public--lightener news__button__public">Read more</a>
+                </li>
+            </ul>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <div class="partners__block">
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/themeforest.png" alt="partners">
+                </a>
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/activeden.png" alt="partners">
+                </a>
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/audiojungle.png" alt="partners">
+                </a>
+                <a href="#" class="partners__link">
+                    <img class="partners__picture" src="../app/images/codecanyon.png" alt="partners">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+        <div class="container">
+            <div class="footer-top__block footer-top__block__logo">
+                <a href="#" class="logo logo__footer">
+                    <img class="logo__picture" src="images/logo__footer.png" alt="logo">
+                    <div class="logo__sign">
+                        <h3 class="logo__world">Bricktower</h3>
+                        <p class="logo__description">High Quality Construction</p>
+                    </div>
+                </a>
+                <p class="footer-top__logo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eum asperiores eos hic quia voluptatem 
+                saepe, dicta quod eveniet exercitationem
+                </p>
+                <div class="footer-top__logo__social">
+                    <i class="fa fa-facebook social" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus social" aria-hidden="true"></i>
+                    <i class="fa fa-twitter social" aria-hidden="true"></i>
+                    <i class="fa fa-behance social" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin social" aria-hidden="true"></i>
+                    <i class="fa fa-drupal social" aria-hidden="true"></i>
+                </div>
+            </div><!--footer-top__block__logo-->
+
+           
+
+            <div class="footer-top__block footer-top__block__links">
+                    <h3 class="footer-top__header">Useful links</h3>
+                    <div class="footer-top__tile links">
+                    <ul class="footer-top__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Home</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">About us</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Services</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Projects</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-top__list">
+                        <li class="list__item">
+                            <a href="#" class="list__link">Contact us</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">Blog</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__link">FAQ</a>
+                        </li>
+                    </ul>
+                </div><!--footer-top__tile-->
+                </div><!--footer-top__links-->
+
+            <div class="footer-top__block footer-top__block__contact">
+                <h3 class="footer-top__header">Contact us</h3>
+                <ul class="footer-top__tile contact">
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+                            Call Us +1 (855) 203-5485
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-fax contact__icon" aria-hidden="true"></i>
+                            +1 (855) 203-5485
+                        </a>
+                    </li>   
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-envelope contact__icon" aria-hidden="true"></i>
+                            info@example.com
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="#" class="contact__link">
+                            <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+                            Building Cror, New York, NY 93459
+                        </a>
+                    </li>
+                </ul><!--footer-top__tile-->
+            </div><!--footer-top__contact-->
+
+                
+            <div class="footer-top__block footer-top__block__info">
+                <h3 class="footer-top__header footer-top__header__info">Working hours</h3>
+                <div class="info">
+                    <p class="footer-top__info__text">Our support available to help you 24 hours a day, seven days a week.</p>
+                    <div class="footer-top__info__time">
+                        <p class="info__day">Monday-Friday</p><p>9am to 5pm</p>
+                    </div>
+                    <div class="footer-top__info__time">
+                        <p class="info__day">Saturday</p>
+                        <p>10am to 2pm</p>
+                    </div>
+                    <div class="footer-top__info__time">
+                        <p class="info__day">Sunday</p>
+                        <p>Closed</p>
+                    </div>
+                </div>
+            </div><!--footer-top__info-->
+        </div><!--container-->
+        </div><!--footer_top-->
+
+        <div class="footer-bottom">
+          <div class="container">
+                <p class="copy">Copyright &copy; 2018 Construction Theme Demo-Theme by <span class="copy--decorated">AuThemes</span></p>
+                <ul class="footer-bottom__nav">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Our Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contact us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- build:css css/vendor.min.css -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endbuild -->
+    
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+    
+
+    <!-- build:js scripts/vendor.min.js -->
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/fitvids/fitvids.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/accordion.js"></script>
+    <!-- endbuild -->
+    
+</body>
+</html>

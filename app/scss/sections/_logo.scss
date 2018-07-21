@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+
+    &__picture {
+        margin-right: 15px;
+    
+    }
+
+    &__sign {
+        padding: 10px 0;
+    }
+
+    &__world {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+    }
+
+    &__description {
+        font-family: $font-family-main;
+        font-size: 14px;
+        color: #666;
+    }
+}

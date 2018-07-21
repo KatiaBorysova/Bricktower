@@ -1,0 +1,24 @@
+.partners {
+    padding: 55px 0;
+    background-color: #f7f7f7;
+    
+   
+        @media only screen and (max-width: 1200px) {
+            padding: 35px 0 25px;
+         
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__link {
+        margin: 15px;
+    }
+
+    &__picture {
+        width: 170px;
+    }
+}

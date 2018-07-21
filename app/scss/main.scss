@@ -1,0 +1,92 @@
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+//@import "../../node_modules/normalize-scss/sass/normalize.scss";
+
+@import 'global/fonts';
+@import 'global/vars';
+@import 'global/mixins';
+
+@import 'sections/button';
+@import 'sections/title';
+@import 'sections/hovering-block';
+@import 'sections/logo';
+@import 'sections/header';
+@import 'sections/hero';
+@import 'sections/quote';
+@import 'sections/services';
+@import 'sections/success';
+@import 'sections/process';
+@import 'sections/reviews';
+@import 'sections/our-team';
+@import 'sections/proposal';
+@import 'sections/news';
+@import 'sections/partners';
+@import 'sections/footer';
+
+@import 'sections/projects--menu';
+@import 'sections/about--description';
+@import 'sections/about--video-skills-block';
+@import 'sections/about--our-team';
+@import 'sections/about--statistics';
+
+@import 'sections/contact--map';
+@import 'sections/contact--contact-us';
+
+@import 'sections/accordion';
+
+@import 'sections/construction--main-section';
+@import 'sections/construction--sidebar';
+@import 'sections/construction--content';
+
+@import 'sections/blog-details--article';
+@import 'sections/blog-details--comments';
+@import 'sections/blog-details--sidebar';
+
+@import 'sections/blog';
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family-main;
+    font-size: 15px;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    //background-color: aqua;
+}
+
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+
+

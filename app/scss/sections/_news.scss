@@ -1,0 +1,101 @@
+.news {
+    padding: 80px 0;
+    //text-align: center;
+
+    
+
+    @media only screen and (max-width: 720px) {
+        padding: 40px 0 35px 0;
+    }
+
+    &.container {
+        @media only screen and (max-width: 1210px) {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          @media only screen and (max-width: 415px) {
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0px;
+
+        @media only screen and (max-width: 900px) {
+            justify-content: center;
+        }
+
+    }
+    & .list__item {
+        width: 31.7%;
+        padding-bottom: 20px;
+
+        @media only screen and (max-width: 900px) {
+            width: 50%;
+            margin-bottom: 25px;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 720px) {
+            width: 98%;
+        }
+
+       & .list__image {
+            width: 100%;
+        }
+        & .date__block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 60px;
+            background-color: $decoration-color;
+            z-index: 10;
+            padding: 8px 5px;
+
+            & .date__day {
+                color: #fff;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
+
+                &:first-child {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+
+        & .list__header {
+            margin: 28px 0 5px 0;
+            font-size: 18px;
+            font-family: $font-family-title;
+            font-weight: bold;
+
+            & .list__link {
+                color: $titles-color;
+                transition: .3s;
+
+                &:hover {
+                    color: $decoration-color;
+                }
+            } 
+        }
+
+       & .list__description {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+    }
+
+    &__button__public {
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 9px 26px;
+    }
+}

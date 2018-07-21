@@ -1,0 +1,197 @@
+.statistics {
+    //max-height: 605px;
+    //padding: 70px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+
+
+
+   & .title--with-line-left {
+
+        
+        @media only screen and (max-width: 1000px) {
+            text-align: center;
+
+            &::after {
+                content: '';
+                bottom: -16px;
+                left: 50%;
+                margin-left: -35px;
+                width: 70px;
+                height: 3px;
+                background: $decoration-color;
+                position: absolute;
+
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+           margin-bottom: 25px;
+        }
+
+        & .title__header {
+            @media only screen and (max-width: 350px) {
+                font-size: 20px;
+             }
+        }
+        
+    }
+
+    & .title--with-line-white {
+        &::after {
+            content: '';
+            bottom: -16px;
+            left: 0;
+            width: 70px;
+            height: 3px;
+            background: #fff;
+            position: absolute;
+
+            @media only screen and (max-width: 1000px) {
+                left: 50%;
+                margin-left: -35px;
+             }
+        }
+    }
+
+
+
+    & .choose-us {
+        background-color: $decoration-color;
+        max-height: 605px;
+        width: 50%;
+        padding: 70px 0 80px 6.6%;
+
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+            padding: 50px 22px;
+        }
+        @media only screen and (max-width: 1000px) {
+            
+            text-align: center;
+        }
+        @media only screen and (max-width: 800px) {
+            padding: 40px 22px;
+        }
+
+        
+        
+    } 
+    & .statistics-company {
+        width: 50%;
+        padding-top: 600px;
+        background: url(../images/statistics.jpg) center/cover no-repeat;
+      
+
+        @media only screen and (max-width: 1000px) {
+           width: 100%;
+           padding-top: 530px;
+        }
+        @media only screen and (max-width: 850px) {
+            padding-top: 450px;
+         }
+         @media only screen and (max-width: 700px) {
+            padding-top: 400px;
+         }
+         @media only screen and (max-width: 550px) {
+            padding-top: 365px;
+         }
+         @media only screen and (max-width: 330px) {
+            padding-top: 380px;
+         }
+
+
+        & .statistics-company__hovering__item {
+            padding: 70px 7% 80px 80px;
+            text-align: left;
+            cursor: default;
+
+            @media only screen and (max-width: 1000px) {
+                padding: 50px 22px;
+                text-align: center;
+            }
+            @media only screen and (max-width: 800px) {
+                padding: 40px 22px;
+            }
+    
+        }
+////////////////////
+        
+
+/////
+        &__block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-top: 20px;
+            max-width: 500px;
+
+            @media only screen and (max-width: 1000px) {
+                max-width: 1170px;
+            }
+
+            @media only screen and (max-width: 800px) {
+                margin-top: 0;
+            }
+            @media only screen and (max-width: 740px) {
+                margin-bottom: 7px;
+            }
+        
+        }
+
+        &__item {
+            border: 2px solid #fff;
+            margin: 20px 0;
+            width: 47%;
+            padding: 30px 0;
+            text-align: start;
+            display: flex;
+            justify-content: center;
+            transition: .3s;
+
+            @media only screen and (max-width: 850px) {
+                padding: 17px 0;
+                margin: 15px 0;
+            }
+            @media only screen and (max-width: 700px) {
+                padding: 11px 0;
+                margin: 9px 0;
+            }
+            
+            &:hover {
+                border: 2px solid $decoration-color;
+            }
+    
+        }
+ 
+        &__number {
+            font-size: 30px;
+            color: $decoration-color;
+
+            @media only screen and (max-width: 550px) {
+                font-size: 24px;
+            }
+
+            @media only screen and (max-width: 520px) {
+               font-size: 23px;
+            }
+            
+        }
+
+        &__explanation {
+            font-size: 14px;
+            color: #fff;
+
+            @media only screen and (max-width: 350px) {
+                font-size: 13px;
+             }
+        }
+
+        &__button__public {
+            font-size: 14px;
+        }
+    }
+}

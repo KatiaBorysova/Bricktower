@@ -1,0 +1,15 @@
+.skills {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .skills .video-block {
+    background: url(../images/video-img.jpg) center/cover no-repeat;
+    width: 50%;
+    padding: 540px 20px 30px 30px; }
+  .skills .statistics-block {
+    width: 50%; }

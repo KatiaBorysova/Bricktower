@@ -1,0 +1,65 @@
+.title {
+    margin-bottom: 65px;
+    text-align: center;
+    font-family: $font-family-title;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &__link {
+        color: #333;
+        transition: .3s;
+
+        &:hover {
+            color:$decoration-color;
+        }
+    }
+
+    &__header {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 0;
+
+        &--white {
+            color: #fff;
+        }
+    }
+
+    &--with-bottom-line {
+        position: relative;
+
+        &::after {
+            content: '';
+            bottom: -16px;
+            width: 63px;
+            height: 3px;
+            background: $decoration-color;
+            position: absolute;
+            left: 50%;
+            margin-left: -31.5px;
+        }
+        
+    }
+    &--with-line-left {
+
+        color: #333;
+        text-align: start;
+        margin-bottom: 35px;
+        position: relative;
+
+        &::after {
+            content: '';
+            bottom: -16px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: $decoration-color;
+            position: absolute;
+        }
+    }
+    &--with-line-white {
+        &::after {
+            background: #fff;
+        }
+    }
+}
