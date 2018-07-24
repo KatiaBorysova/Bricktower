@@ -1,4 +1,4 @@
-let nav = document.getElementsByClassName('nav')[0];
+var nav = document.getElementsByClassName('nav')[0];
 
 function toggleMenu() {
     if (nav.className === 'nav') {

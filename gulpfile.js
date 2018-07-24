@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     useref = require('gulp-useref'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
+    clean = require('gulp-clean'),
     csso = require('gulp-csso'),
     imagemin = require('gulp-imagemin');
 
@@ -22,6 +23,11 @@ gulp.task('watch', function () {
     gulp.watch('app/scss/**/*.scss', ['style']);
     });
 
+//Clean
+gulp.task('clean', function () {
+    return gulp.src('dist', {read: false})
+        .pipe(clean());
+});
 
 //images
 gulp.task('images', function(){
@@ -39,21 +45,12 @@ gulp.task('images', function(){
   });
 
   //build
-gulp.task('build', ['images', 'fonts'], function () {
+gulp.task('build', ['clean', 'images', 'fonts'], function () {
     return gulp.src('app/*.html')
-        .pipe(useref())
-       // .pipe(gulpif('*.js', uglify()))
-       .pipe(uglify().on('error', function(e){
-        console.log(e);
-     }))
-        .pipe(gulpif('*.css', csso()))
-        .pipe(gulp.dest('dist'));
+    .pipe(useref())
+    .pipe(gulpif('*.js', uglify().on('error', function(e){
+        console.log(e) })))
+    .pipe(gulpif('*.css', csso()))
+    .pipe(gulp.dest('dist'))
 });
 
-gulp.task('scripts', function () {
-    return gulp.src('js/*.js')
-      .pipe(uglify().on('error', function(e){
-          console.log(e);
-       }))
-      .pipe(gulp.dest('dist/minjs'));
-});
