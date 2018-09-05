@@ -3332,7 +3332,7 @@
       width: 50px;
       height: 60px;
       background-color: #ffc20a;
-      z-index: 10;
+      z-index: 8;
       padding: 8px 5px; }
       .news .list__item .date__block .date__day {
         color: #fff;
@@ -4568,7 +4568,7 @@
     width: 50px;
     height: 60px;
     background-color: #ffc20a;
-    z-index: 10;
+    z-index: 8;
     padding: 8px 5px; }
     .post .date__block .date__day {
       color: #fff;
